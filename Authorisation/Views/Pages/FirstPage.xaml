@@ -1,0 +1,48 @@
+﻿<Page x:Class="Authorisation.Views.Pages.FirstPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Authorisation.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FirstPage">
+
+    <Grid>
+        <StackPanel Orientation="Vertical"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" Height="263" Width="445">
+
+            <TextBlock Text="Authorisation" 
+                       FontSize="40"
+                       Foreground="#FF0C2F5B" 
+                       FontFamily="Book Antiqua"/>
+
+            <TextBlock Text="Login:"
+                       FontSize="30"
+                       FontFamily="Book Antiqua"/>
+
+            <TextBox TextWrapping="Wrap"
+                     Name="TxtBxLogin"
+                     Text="Login" 
+                     Width="141"
+                     Height="33"/>
+
+            <TextBlock Text="Password:"
+                       FontSize="30" 
+                       FontFamily="Book Antiqua"/>
+
+            <TextBox TextWrapping="Wrap"
+                     Name="TxtBxPassword"
+                     Text="Password" 
+                     Width="141" 
+                     Height="33"/>
+            <Button Content="Next"
+                    x:Name="BtnNext" 
+                    Height="30" 
+                    Width="175"
+                    Click="BtnNext_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Page>
